@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="input-container">
+            <label>rows</label>
+            <input name="rows" id="rows" type="number" placeholder="enter no of rows" />
+        </div>
+        <div class="input-container">
+            <label>column</label>
+            <input name="column" id="column" type="number" placeholder="enter no of columns" />
+        </div>
+        <div class="input-container">
+            <label>start</label>
+            <input name="startx" id="startx" type="number" placeholder="x-cordinate" />
+            <input name="starty" id="starty" type="number" placeholder="y-cordinate" />
+        </div>
+        <div class="input-container">
+            <label>end</label>
+            <input name="endx" id="endx" type="number" placeholder="x-cordinate" />
+            <input name="endy" id="endy" type="number" placeholder="y-cordinate" />
+        </div>
+        <div class="input-container">
+            <label>Random Obstacle</label>
+            <input type="number" name="range" id="range" />
+        </div>
+        <div class="input-container">
+            <button onclick="generate()" id="generate">Generate</button>
+            <button onclick="path()">find path</button>
+            <button onclick="reload()">reset </button>
+        </div>
+    </div>
+    <div class="table-container">
+
+        <table id="grid"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
